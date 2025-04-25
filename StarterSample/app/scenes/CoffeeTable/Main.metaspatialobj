@@ -1,0 +1,102 @@
+scene: docref:Main.scene
+entities:
+  com.meta.models.AssetFolder:
+    - components:
+        com.meta.components.AssetFolder:
+          assets:
+            - ref:CoffeeTable_Color
+            - ref:CoffeeTable_Normal
+            - ref:CoffeeTable_ORM
+            - ref:CoffeeTable_mat
+            - ref:CoffeeTable_geo
+        com.meta.components.Name:
+          name: CoffeeTable
+  com.meta.models.AssetRoot:
+    - components:
+        com.meta.components.AssetMetadata:
+          {}
+        com.meta.components.AssetRoot:
+          defaultScene: ref:Scene
+          scenes:
+            - ref:Scene
+  com.meta.models.Geometry:
+    - components:
+        com.meta.components.Geometry:
+          data: binary/Geometry.bin
+      tag: Geometry
+  com.meta.models.Image:
+    - components:
+        com.meta.components.Asset:
+          path: assets/CoffeeTable_Normal.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: CoffeeTable_Normal
+      tag: CoffeeTable_Normal
+    - components:
+        com.meta.components.Asset:
+          path: assets/CoffeeTable_ORM.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: CoffeeTable_ORM
+      tag: CoffeeTable_ORM
+    - components:
+        com.meta.components.Asset:
+          path: assets/CoffeeTable_Color.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: CoffeeTable_Color
+      tag: CoffeeTable_Color
+  com.meta.models.Material:
+    - uri: docref:materials/CoffeeTable_mat.metaspatialmaterial
+      tag: CoffeeTable_mat
+  com.meta.models.Mesh:
+    - components:
+        com.meta.components.Mesh:
+          morphTargetNames:
+            []
+          morphTargetWeights:
+            []
+          primitives:
+            - ref:Primitive
+        com.meta.components.Name:
+          name: CoffeeTable_geo
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+      tag: CoffeeTable_geo
+  com.meta.models.Primitive:
+    - components:
+        com.meta.components.Primitive:
+          indexCount: 4056
+          mode: Triangles
+          vertexCount: 998
+          geometry: ref:Geometry
+          material: ref:CoffeeTable_mat
+      tag: Primitive
+  com.meta.models.Sampler:
+    - components:
+        com.meta.components.Name:
+          name: sampler0
+        com.meta.components.Sampler:
+          magFilter: Linear
+          minFilter: LinearMipmapLinear
+          wrapS: Repeat
+          wrapT: Repeat
+      tag: sampler0
+  com.meta.models.Texture:
+    - uri: docref:textures/texture2.metaspatialtexture
+      tag: texture2
+    - uri: docref:textures/texture3.metaspatialtexture
+      tag: texture3
+    - uri: docref:textures/texture1.metaspatialtexture
+      tag: texture1
+metadata:
+  version: 1.29

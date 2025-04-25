@@ -1,0 +1,5 @@
+data:
+  tabs:
+    - Composition
+    - environment
+  current_tab: Composition

@@ -1,0 +1,474 @@
+entities:
+  com.meta.models.Scene:
+    - components:
+        com.meta.components.Name:
+          {}
+        com.meta.components.Scene:
+          nodes:
+            - ref:Panel1
+            - ref:SculptureLoop
+            - ref:CoffeeTable
+            - ref:Sideboard
+            - ref:SmartSpeaker
+            - ref:BookStackVertical
+            - ref:FloorLamp
+            - ref:Plant_B
+            - ref:PlantSansevieria
+            - ref:recordPlayer
+            - ref:LeatherSofa
+            - ref:Environment1
+            - ref:Panel
+            - ref:FloorLamp1
+            - ref:PlantSansevieria1
+            - ref:Plant_B1
+            - ref:SmartSpeaker1
+            - ref:Panel2
+      tag: Scene1
+  com.meta.models.SceneNode:
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:environment/Main.metaspatialobj
+        com.meta.components.Name:
+          name: Environment
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          componentVersion: 1
+        com.meta.spatial.toolkit.SupportsLocomotion:
+          {}
+      tag: Environment1
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.Name:
+          name: Panel
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 6.12323426e-17
+            - 6.12323426e-17
+            - 1
+            - -3.74939976e-33
+          rotation.format: Quaternion
+          scale:
+            - 8
+            - 5
+            - 1
+          translation:
+            - 6.79466219e-16
+            - 3.66247463
+            - -5.5
+          componentVersion: 1
+        com.meta.spatial.toolkit.Panel:
+          panel: "@layout/video_panel"
+        com.meta.spatial.toolkit.PanelDimensions:
+          {}
+      tag: Panel
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:LeatherSofa/Main.metaspatialobj
+        com.meta.components.Name:
+          name: LeatherSofa
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 0
+            - 3.14159274
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 0
+            - 0.300000012
+            - 6.13847733
+          componentVersion: 1
+      tag: LeatherSofa
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:recordPlayer/Main.metaspatialobj
+        com.meta.components.Name:
+          name: recordPlayer
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 0
+            - 4.71238899
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 0.0122079263
+            - 0.730000019
+            - -5
+          componentVersion: 1
+      tag: recordPlayer
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:PlantSansevieria/Main.metaspatialobj
+        com.meta.components.Name:
+          name: PlantSansevieria
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 1.2689569
+            - 0.300000012
+            - -5
+          componentVersion: 1
+      tag: PlantSansevieria
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:Plant_B/Main.metaspatialobj
+        com.meta.components.Name:
+          name: Plant_B
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 1.54722536
+            - 0.300000012
+            - -5
+          componentVersion: 1
+      tag: Plant_B
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:FloorLamp/Main.metaspatialobj
+        com.meta.components.Name:
+          name: FloorLamp
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 1.25999999
+            - 0.300000012
+            - 5.80000019
+          componentVersion: 1
+      tag: FloorLamp
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:BookStackVertical/Main.metaspatialobj
+        com.meta.components.Name:
+          name: BookStackVertical
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 0.423407674
+            - 0.699999988
+            - -5
+          componentVersion: 1
+      tag: BookStackVertical
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:SmartSpeaker/Main.metaspatialobj
+        com.meta.components.Name:
+          name: SmartSpeaker
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 0.741945267
+            - 0.75
+            - -4.9000001
+          componentVersion: 1
+      tag: SmartSpeaker
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:FloorLamp/Main.metaspatialobj
+        com.meta.components.Name:
+          name: FloorLamp
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - -1.25776684
+            - 0.300000012
+            - 5.80000019
+          componentVersion: 1
+      tag: FloorLamp1
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:PlantSansevieria/Main.metaspatialobj
+        com.meta.components.Name:
+          name: PlantSansevieria
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - -1.28572392
+            - 0.300000012
+            - -5
+          componentVersion: 1
+      tag: PlantSansevieria1
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:Plant_B/Main.metaspatialobj
+        com.meta.components.Name:
+          name: Plant_B
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - -1.58426785
+            - 0.300000012
+            - -5
+          componentVersion: 1
+      tag: Plant_B1
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:Sideboard/Main.metaspatialobj
+        com.meta.components.Name:
+          name: Sideboard
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 0
+            - 4.71238899
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 1
+            - 0.5
+            - 1
+          translation:
+            - 0
+            - 0.300000012
+            - -5
+          componentVersion: 1
+      tag: Sideboard
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:SmartSpeaker/Main.metaspatialobj
+        com.meta.components.Name:
+          name: SmartSpeaker
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - -0.709014297
+            - 0.74000001
+            - -4.9000001
+          componentVersion: 1
+      tag: SmartSpeaker1
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:CoffeeTable/Main.metaspatialobj
+        com.meta.components.Name:
+          name: CoffeeTable
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 0
+            - 4.71238899
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 0
+            - 0.300000012
+            - 5
+          componentVersion: 1
+      tag: CoffeeTable
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.DocumentReference:
+          transformType: None
+          documentReference: projref:SculptureLoop/Main.metaspatialobj
+        com.meta.components.Name:
+          name: SculptureLoop
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 1.57079637
+            - 0
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 0.300000012
+            - 0.300000012
+            - 0.300000012
+          translation:
+            - -0.400000006
+            - 0.861222327
+            - -5.0999999
+          componentVersion: 1
+      tag: SculptureLoop
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.Name:
+          name: Panel1
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 0
+            - 3.92699075
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - -1.38709545
+            - 0.981127381
+            - 5.09549189
+          componentVersion: 1
+        com.meta.spatial.toolkit.Grabbable:
+          isGrabbed: true
+          enabled: true
+        com.meta.spatial.toolkit.Panel:
+          panel: "@layout/control_panel"
+        com.meta.spatial.toolkit.PanelDimensions:
+          {}
+      tag: Panel1
+    - components:
+        com.meta.components.Animatable:
+          {}
+        com.meta.components.Name:
+          name: Panel2
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+        com.meta.components.SceneNode:
+          rotation.data:
+            - 0
+            - 2.3561945
+            - 0
+            - 0
+          rotation.format: Euler
+          scale:
+            - 1
+            - 1
+            - 1
+          translation:
+            - 1.38999999
+            - 0.981127381
+            - 5.09549189
+          componentVersion: 1
+        com.meta.spatial.toolkit.Followable:
+          {}
+        com.meta.spatial.toolkit.Grabbable:
+          isGrabbed: true
+          enabled: true
+        com.meta.spatial.toolkit.Panel:
+          panel: "@layout/lighting_panel"
+        com.meta.spatial.toolkit.PanelDimensions:
+          {}
+      tag: Panel2
+metadata:
+  version: 1.29

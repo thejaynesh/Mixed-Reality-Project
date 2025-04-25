@@ -1,0 +1,98 @@
+entities:
+  com.meta.models.Scene:
+    - components:
+        com.meta.components.Name: {}
+        com.meta.components.Scene:
+          nodes:
+            - ref:Environment1
+            - ref:SculptureLoop
+            - ref:CoffeeTable
+            - ref:Sideboard
+            - ref:SmartSpeaker
+            - ref:BookStackVertical
+            - ref:FloorLamp
+            - ref:Plant_B
+            - ref:PlantSansevieria
+            - ref:recordPlayer
+            - ref:LeatherSofa
+            - ref:FloorLamp1
+            - ref:PlantSansevieria1
+            - ref:Plant_B1
+            - ref:SmartSpeaker1
+    tag: VRScene
+  com.meta.models.SceneNode:
+    - components:
+        com.meta.components.Name:
+          name: Environment1
+        com.meta.components.DocumentReference:
+          documentReference: projref:environment/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: SculptureLoop
+        com.meta.components.DocumentReference:
+          documentReference: projref:SculptureLoop/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: CoffeeTable
+        com.meta.components.DocumentReference:
+          documentReference: projref:CoffeeTable/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: Sideboard
+        com.meta.components.DocumentReference:
+          documentReference: projref:Sideboard/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: SmartSpeaker
+        com.meta.components.DocumentReference:
+          documentReference: projref:SmartSpeaker/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: BookStackVertical
+        com.meta.components.DocumentReference:
+          documentReference: projref:BookStackVertical/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: FloorLamp
+        com.meta.components.DocumentReference:
+          documentReference: projref:FloorLamp/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: Plant_B
+        com.meta.components.DocumentReference:
+          documentReference: projref:Plant_B/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: PlantSansevieria
+        com.meta.components.DocumentReference:
+          documentReference: projref:PlantSansevieria/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: recordPlayer
+        com.meta.components.DocumentReference:
+          documentReference: projref:recordPlayer/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: LeatherSofa
+        com.meta.components.DocumentReference:
+          documentReference: projref:LeatherSofa/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: FloorLamp1
+        com.meta.components.DocumentReference:
+          documentReference: projref:FloorLamp/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: PlantSansevieria1
+        com.meta.components.DocumentReference:
+          documentReference: projref:PlantSansevieria/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: Plant_B1
+        com.meta.components.DocumentReference:
+          documentReference: projref:Plant_B/Main.metaspatialobj
+    - components:
+        com.meta.components.Name:
+          name: SmartSpeaker1
+        com.meta.components.DocumentReference:
+          documentReference: projref:SmartSpeaker/Main.metaspatialobj

@@ -1,0 +1,102 @@
+scene: docref:Main.scene
+entities:
+  com.meta.models.AssetFolder:
+    - components:
+        com.meta.components.AssetFolder:
+          assets:
+            - ref:Plant_B_Color
+            - ref:Plant_B_Normal
+            - ref:Plant_B_ORM
+            - ref:Plant_B_mat
+            - ref:Plant_B_geo
+        com.meta.components.Name:
+          name: Plant_B
+  com.meta.models.AssetRoot:
+    - components:
+        com.meta.components.AssetMetadata:
+          {}
+        com.meta.components.AssetRoot:
+          defaultScene: ref:Scene
+          scenes:
+            - ref:Scene
+  com.meta.models.Geometry:
+    - components:
+        com.meta.components.Geometry:
+          data: binary/Geometry.bin
+      tag: Geometry
+  com.meta.models.Image:
+    - components:
+        com.meta.components.Asset:
+          path: assets/Plant_B_Normal.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: Plant_B_Normal
+      tag: Plant_B_Normal
+    - components:
+        com.meta.components.Asset:
+          path: assets/Plant_B_ORM.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: Plant_B_ORM
+      tag: Plant_B_ORM
+    - components:
+        com.meta.components.Asset:
+          path: assets/Plant_B_Color.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: Plant_B_Color
+      tag: Plant_B_Color
+  com.meta.models.Material:
+    - uri: docref:materials/Plant_B_mat.metaspatialmaterial
+      tag: Plant_B_mat
+  com.meta.models.Mesh:
+    - components:
+        com.meta.components.Mesh:
+          morphTargetNames:
+            []
+          morphTargetWeights:
+            []
+          primitives:
+            - ref:Primitive
+        com.meta.components.Name:
+          name: Plant_B_geo
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+      tag: Plant_B_geo
+  com.meta.models.Primitive:
+    - components:
+        com.meta.components.Primitive:
+          indexCount: 6324
+          mode: Triangles
+          vertexCount: 1345
+          geometry: ref:Geometry
+          material: ref:Plant_B_mat
+      tag: Primitive
+  com.meta.models.Sampler:
+    - components:
+        com.meta.components.Name:
+          name: sampler0
+        com.meta.components.Sampler:
+          magFilter: Linear
+          minFilter: LinearMipmapLinear
+          wrapS: Repeat
+          wrapT: Repeat
+      tag: sampler0
+  com.meta.models.Texture:
+    - uri: docref:textures/texture1.metaspatialtexture
+      tag: texture1
+    - uri: docref:textures/texture2.metaspatialtexture
+      tag: texture2
+    - uri: docref:textures/texture3.metaspatialtexture
+      tag: texture3
+metadata:
+  version: 1.29

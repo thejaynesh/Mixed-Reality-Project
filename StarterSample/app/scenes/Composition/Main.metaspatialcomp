@@ -1,0 +1,12 @@
+scene: docref:Main.scene
+entities:
+  com.meta.models.AssetRoot:
+    - components:
+        com.meta.components.AssetMetadata:
+          {}
+        com.meta.components.AssetRoot:
+          defaultScene: ref:Scene1
+          scenes:
+            - ref:Scene1
+metadata:
+  version: 1.29

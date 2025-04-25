@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center">
+
+  <!-- Title -->
+  <TextView
+      android:id="@+id/panel_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Video Control Panel"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:textColor="#FFFFFF"
+      android:layout_marginBottom="24dp"/>
+
+  <!-- Pause / Play Button -->
+  <Button
+      android:id="@+id/btn_pause_play"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:text="Pause"
+      android:textSize="18sp"
+      android:layout_marginBottom="24dp"/>
+
+  <!-- Volume Control -->
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Volume"
+      android:textSize="18sp"
+      android:textColor="#FFFFFF"
+      android:layout_marginBottom="8dp"/>
+
+  <SeekBar
+      android:id="@+id/volume_slider"
+      android:layout_width="500dp"
+      android:layout_height="wrap_content"
+      android:max="100"
+      android:progress="50"/>
+
+</LinearLayout>

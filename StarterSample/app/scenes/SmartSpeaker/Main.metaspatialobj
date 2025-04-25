@@ -1,0 +1,170 @@
+scene: docref:Main.scene
+entities:
+  com.meta.models.AssetFolder:
+    - components:
+        com.meta.components.AssetFolder:
+          assets:
+            - ref:Display_Color
+            - ref:Display_Normal
+            - ref:Display_ORM
+            - ref:SmartSpeaker_Color
+            - ref:SmartSpeaker_Emissive
+            - ref:SmartSpeaker_Normal
+            - ref:SmartSpeaker_ORM
+            - ref:Display
+            - ref:SmartSpeaker1
+            - ref:SmartSpeaker_geo
+        com.meta.components.Name:
+          name: SmartSpeaker
+  com.meta.models.AssetRoot:
+    - components:
+        com.meta.components.AssetMetadata:
+          {}
+        com.meta.components.AssetRoot:
+          defaultScene: ref:Scene
+          scenes:
+            - ref:Scene
+  com.meta.models.Geometry:
+    - components:
+        com.meta.components.Geometry:
+          data: binary/Geometry.bin
+      tag: Geometry
+    - components:
+        com.meta.components.Geometry:
+          data: binary/Geometry1.bin
+      tag: Geometry1
+  com.meta.models.Image:
+    - components:
+        com.meta.components.Asset:
+          path: assets/Display_ORM.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: Display_ORM
+      tag: Display_ORM
+    - components:
+        com.meta.components.Asset:
+          path: assets/SmartSpeaker_Emissive.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: SmartSpeaker_Emissive
+      tag: SmartSpeaker_Emissive
+    - components:
+        com.meta.components.Asset:
+          path: assets/Display_Normal.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: Display_Normal
+      tag: Display_Normal
+    - components:
+        com.meta.components.Asset:
+          path: assets/SmartSpeaker_Color.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: SmartSpeaker_Color
+      tag: SmartSpeaker_Color
+    - components:
+        com.meta.components.Asset:
+          path: assets/SmartSpeaker_ORM.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: SmartSpeaker_ORM
+      tag: SmartSpeaker_ORM
+    - components:
+        com.meta.components.Asset:
+          path: assets/SmartSpeaker_Normal.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: SmartSpeaker_Normal
+      tag: SmartSpeaker_Normal
+    - components:
+        com.meta.components.Asset:
+          path: assets/Display_Color.png
+        com.meta.components.Image:
+          height: 1024
+          mimeType: image/png
+          width: 1024
+        com.meta.components.Name:
+          name: Display_Color
+      tag: Display_Color
+  com.meta.models.Material:
+    - uri: docref:materials/SmartSpeaker1.metaspatialmaterial
+      tag: SmartSpeaker1
+    - uri: docref:materials/Display.metaspatialmaterial
+      tag: Display
+  com.meta.models.Mesh:
+    - components:
+        com.meta.components.Mesh:
+          morphTargetNames:
+            []
+          morphTargetWeights:
+            []
+          primitives:
+            - ref:Primitive1
+            - ref:Primitive
+        com.meta.components.Name:
+          name: SmartSpeaker_geo
+        com.meta.components.PointerNodeInverseComponent:
+          {}
+      tag: SmartSpeaker_geo
+  com.meta.models.Primitive:
+    - components:
+        com.meta.components.Primitive:
+          indexCount: 156
+          mode: Triangles
+          vertexCount: 53
+          geometry: ref:Geometry1
+          material: ref:Display
+      tag: Primitive
+    - components:
+        com.meta.components.Primitive:
+          indexCount: 7698
+          mode: Triangles
+          vertexCount: 1916
+          geometry: ref:Geometry
+          material: ref:SmartSpeaker1
+      tag: Primitive1
+  com.meta.models.Sampler:
+    - components:
+        com.meta.components.Name:
+          name: sampler0
+        com.meta.components.Sampler:
+          magFilter: Linear
+          minFilter: LinearMipmapLinear
+          wrapS: Repeat
+          wrapT: Repeat
+      tag: sampler0
+  com.meta.models.Texture:
+    - uri: docref:textures/texture3.metaspatialtexture
+      tag: texture3
+    - uri: docref:textures/texture4.metaspatialtexture
+      tag: texture4
+    - uri: docref:textures/texture1.metaspatialtexture
+      tag: texture1
+    - uri: docref:textures/texture2.metaspatialtexture
+      tag: texture2
+    - uri: docref:textures/texture7.metaspatialtexture
+      tag: texture7
+    - uri: docref:textures/texture6.metaspatialtexture
+      tag: texture6
+    - uri: docref:textures/texture5.metaspatialtexture
+      tag: texture5
+metadata:
+  version: 1.29

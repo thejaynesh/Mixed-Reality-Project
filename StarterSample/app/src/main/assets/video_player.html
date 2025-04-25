@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>YouTube Player</title>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script type="text/javascript">
+        var player;
+        // This function is called by the IFrame API when it is ready.
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: 'QtE00VP4W3Y',
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            },
+            playerVars: {
+              'autoplay': 1,
+              'controls': 0,
+              'loop': 1,
+              'playlist': 'QtE00VP4W3Y'
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+          // Optional: You can do things here when the player is ready.
+        }
+
+        function onPlayerStateChange(event) {
+          // Optional: handle player state changes if needed.
+        }
+
+        // These functions are called from the native code.
+        function pauseMyVideo() {
+          if (player && player.pauseVideo) {
+            player.pauseVideo();
+          }
+        }
+
+        function playMyVideo() {
+          if (player && player.playVideo) {
+            player.playVideo();
+          }
+        }
+    </script>
+</head>
+<body style="margin: 0; background-color: #000;">
+<div id="player"></div>
+</body>
+</html>
